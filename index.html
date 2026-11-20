@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Jamil | AI Engineer & Researcher</title>
+  <meta name="description" content="AI engineer and doctoral researcher working on medical LLMs, multimodal AI for diabetes care, and secure V2X communication." />
+  <meta name="author" content="Muhammad Jamil" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Muhammad Jamil | AI Engineer & Researcher" />
+  <meta property="og:description" content="AI engineer and doctoral researcher working on medical LLMs, multimodal AI for diabetes care, and secure V2X communication." />
+  <meta property="og:image" content="assets/images/og.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#eef3f2" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="home">
+  <noscript><p class="noscript">This site needs JavaScript to show its content. You can still <a href="assets/cv.pdf">download the CV</a>.</p></noscript>
+  <main id="main">
+
+    <section class="hero">
+      <div class="wrap hero__inner">
+        <div class="proofbar rv">
+          <span class="serif proofbar__kicker" id="kicker"></span>
+          <span class="proofbar__sep"></span>
+          <span class="proofbar__proof" id="proof"></span>
+          <span class="proofbar__sep"></span>
+          <span class="proofbar__flags"><span class="avs" id="flags"></span><span id="countriesNote"></span></span>
+        </div>
+        <h1 class="hero__title" id="heroTitle"></h1>
+        <p class="hero__sub rv" style="--d:.35s">
+          <span id="heroSub"></span>
+          <span class="rot" id="rot"><span class="rot__w" id="rotWord"></span></span>
+          <span id="heroSubEnd"></span>
+        </p>
+        <div class="hero__cta rv" style="--d:.45s">
+          <a href="research.html" class="btn btn--cy btn--lg magnetic">Explore my research <span class="arr">→</span></a>
+          <a href="#" class="btn btn--ghost btn--lg magnetic" id="cvBtn" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+      <div class="dome-wrap">
+        <div class="dome" id="dome">
+          <div class="dome__rings" aria-hidden="true"><i></i><i></i><i></i></div>
+          <figure class="arch" id="arch"><img id="photo" alt="" width="880" height="1100" /><span class="arch__fallback" id="photoFallback"></span></figure>
+          <span class="hand hand--hero" id="handNote"></span>
+          <svg class="hand-arrow" viewBox="0 0 120 80" aria-hidden="true"><path d="M8 10 C 50 4, 96 20, 104 64" /><path d="M92 54 L104 66 L112 50" /></svg>
+        </div>
+        <div id="floaters"></div>
+      </div>
+    </section>
+
+    <section class="why" id="about">
+      <div class="wrap">
+        <p class="label rv" id="whyLabel"></p>
+        <h2 class="h-xl rv" id="whyTitle"></h2>
+        <div class="stats" id="stats"></div>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="wrap sec-top">
+        <div><p class="label rv" id="featLabel"></p><h2 class="h-xl rv" id="featTitle"></h2></div>
+        <div class="car-ctrl rv">
+          <button class="roundbtn" id="carPrev" aria-label="Previous papers">←</button>
+          <button class="roundbtn" id="carNext" aria-label="Next papers">→</button>
+        </div>
+      </div>
+      <div class="carousel" id="carousel"><div class="carousel__track" id="cards"></div></div>
+      <div class="wrap"><div class="car-progress"><span id="carBar"></span></div></div>
+    </section>
+
+    <section class="now" id="now">
+      <div class="now__inner wrap">
+        <div class="now__text">
+          <p class="label label--ink rv" id="nowLabel"></p>
+          <h2 class="h-xl rv" id="nowTitle"></h2>
+          <p class="now__p rv" id="nowText"></p>
+          <div class="now__cta rv"><a class="btn btn--ink btn--lg" id="nowPrimary"></a><a class="link-ul" id="nowSecondary" target="_blank" rel="noopener"></a></div>
+          <p class="now__foot mono rv" id="nowFoot"></p>
+        </div>
+        <div class="now__term rv">
+          <div class="tabs" id="tabs" role="tablist"></div>
+          <div class="term">
+            <div class="term__bar mono"><i></i><i></i><i></i><span id="termFile"></span></div>
+            <pre class="term__body mono" id="termBody" aria-live="off"></pre>
+          </div>
+          <p class="term__cap" id="termCap"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="areas">
+      <div class="wrap"><div id="areasHead"></div><ol class="areas" id="areasList"></ol></div>
+    </section>
+
+    <section class="section" id="latest">
+      <div class="wrap"><div id="newsHead"></div><ul class="news" id="newsList"></ul></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact__inner">
+        <h2 class="contact__title rv" id="cTitle"></h2>
+        <p class="lead rv" id="cText"></p>
+        <div class="contact__mailrow rv">
+          <button class="mailcard" data-copy-email>
+            <span class="mailcard__k mono">email</span>
+            <span class="mailcard__v" id="mailText"></span>
+            <span class="mailcard__c mono">copy</span>
+          </button>
+          <span class="hand hand--contact" id="cNote"></span>
+        </div>
+        <div class="socials rv" id="socials"></div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>

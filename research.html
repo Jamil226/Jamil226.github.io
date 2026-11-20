@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research | Muhammad Jamil</title>
+  <meta name="description" content="Grants and a searchable list of Muhammad Jamil's journal articles, conference papers and work under review, with BibTeX export." />
+  <meta name="author" content="Muhammad Jamil" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Research | Muhammad Jamil" />
+  <meta property="og:description" content="Grants and a searchable list of Muhammad Jamil's journal articles, conference papers and work under review, with BibTeX export." />
+  <meta property="og:image" content="assets/images/og.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#eef3f2" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="research">
+  <noscript><p class="noscript">This site needs JavaScript to show its content. You can still <a href="assets/cv.pdf">download the CV</a>.</p></noscript>
+  <main id="main">
+
+    <section class="phero" id="phero"></section>
+    <section class="section section--tight" id="grants"><div class="wrap"><div id="grantsHead"></div><div class="grants" id="grantsList"></div></div></section>
+    <section class="section" id="publications">
+      <div class="wrap">
+        <div id="pubHead"></div>
+        <div class="chart rv" id="chart"></div>
+        <div class="ptools rv" id="pubTools">
+          <div class="ptools__row">
+            <label class="search search--big"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <input id="pubSearch" type="search" placeholder="Search title, author, venue, DOI or topic" aria-label="Search publications" autocomplete="off" spellcheck="false" />
+              <kbd class="mono">/</kbd>
+              <button class="search__x" id="pubClear" type="button" aria-label="Clear search" hidden>×</button>
+            </label>
+            <div class="seg" id="typeTabs" role="tablist" aria-label="Publication type"></div>
+          </div>
+          <div class="chips chips--scroll" id="topicChips" aria-label="Topics"></div>
+          <div class="ptools__row ptools__row--3">
+            <div class="toggles">
+              <button class="tgl" id="fQ1" aria-pressed="false"><i></i>Q1 only</button>
+              <button class="tgl" id="fFirst" aria-pressed="false"><i></i>First author</button>
+              <label class="sel"><span class="mono">Sort</span><select id="pubSort"><option value="new">Newest first</option><option value="old">Oldest first</option><option value="if">Impact factor</option></select></label>
+            </div>
+            <div class="ptools__right"><span class="mono" id="pubCount" aria-live="polite"></span><button class="btn btn--ghost btn--sm" id="pubExport">Export .bib <span class="arr">↓</span></button></div>
+          </div>
+          <div class="pactive" id="pubActive"></div>
+        </div>
+        <ol class="plist" id="pubList"></ol>
+        <div class="empty" id="pubEmpty" hidden><p class="h-md">Nothing matches those filters.</p><button class="btn btn--cy btn--sm" id="pubEmptyReset">Reset filters</button></div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>
